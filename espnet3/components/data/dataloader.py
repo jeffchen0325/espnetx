@@ -7,7 +7,7 @@ import torch
 from hydra.utils import instantiate
 from omegaconf import DictConfig, OmegaConf
 
-from espnet2.samplers.build_batch_sampler import build_batch_sampler
+from espnet3.samplers.build_batch_sampler import build_batch_sampler
 from espnet3.utils.logging_utils import _dump_attrs, build_qualified_name
 
 logger = logging.getLogger(__name__)

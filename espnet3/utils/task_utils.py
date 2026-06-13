@@ -9,8 +9,8 @@ from hydra.utils import get_class
 from omegaconf import DictConfig, OmegaConf
 from typeguard import typechecked
 
-from espnet2.train.abs_espnet_model import AbsESPnetModel
-from espnet2.utils.yaml_no_alias_safe_dump import yaml_no_alias_safe_dump
+from espnet3.train.abs_espnet_model import AbsESPnetModel
+from espnet3.utils.yaml_no_alias_safe_dump import yaml_no_alias_safe_dump
 
 
 def get_task_class(task_path: str):

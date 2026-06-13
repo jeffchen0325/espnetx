@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: espnet3
+Version: 202604
+Summary: ESPnet3: end-to-end speech processing toolkit version 3
+License: Apache Software License
+Project-URL: Homepage, https://github.com/jeffchen0325/espnet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools<74.0.0,>=38.5.1
+Requires-Dist: configargparse>=1.2.1
+Requires-Dist: packaging
+Requires-Dist: typeguard
+Requires-Dist: humanfriendly
+Requires-Dist: scipy>=1.4.1
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: PyYAML>=5.1.2
+Requires-Dist: soundfile>=0.10.2
+Requires-Dist: torch_optimizer
+Requires-Dist: kaldiio>=2.18.0
+Requires-Dist: sentencepiece==0.2.1
+Requires-Dist: librosa>=0.10.2
+Requires-Dist: lightning
+Requires-Dist: torch_complex
+Requires-Dist: tensorboard>=1.14
+Requires-Dist: einops
+Requires-Dist: lhotse
+Requires-Dist: matplotlib
+Requires-Dist: nltk>=3.4.5
+Requires-Dist: hydra-core
+Requires-Dist: omegaconf
+Requires-Dist: datasets
+Requires-Dist: dask[distributed]
+Requires-Dist: dask_jobqueue
+Requires-Dist: torch>=2.3.1
+Requires-Dist: torchaudio>=2.3.1
+Requires-Dist: huggingface_hub
+Requires-Dist: wandb
+Provides-Extra: asr
+Requires-Dist: ctc-segmentation @ git+https://github.com/espnet/ctc-segmentation.git@9b9ea1d ; extra == "asr"
+Requires-Dist: editdistance; extra == "asr"
+Requires-Dist: opt_einsum; extra == "asr"
+Requires-Dist: jiwer; extra == "asr"
+Provides-Extra: tts
+Requires-Dist: pyworld>=0.3.4; extra == "tts"
+Requires-Dist: pypinyin<=0.44.0; extra == "tts"
+Requires-Dist: espnet-tts-frontend; extra == "tts"
+Requires-Dist: g2p_en @ git+https://github.com/espnet/g2p.git@master ; extra == "tts"
+Requires-Dist: jamo==0.4.1; extra == "tts"
+Requires-Dist: jaconv; extra == "tts"
+Provides-Extra: enh
+Requires-Dist: ci_sdr; extra == "enh"
+Requires-Dist: fast-bss-eval==0.1.3; extra == "enh"
+Provides-Extra: asr2
+Requires-Dist: editdistance; extra == "asr2"
+Provides-Extra: s2st
+Requires-Dist: editdistance; extra == "s2st"
+Requires-Dist: s3prl @ git+https://github.com/espnet/s3prl.git@572af70 ; extra == "s2st"
+Provides-Extra: st
+Requires-Dist: editdistance; extra == "st"
+Provides-Extra: s2t
+Requires-Dist: editdistance; extra == "s2t"
+Provides-Extra: spk
+Requires-Dist: asteroid_filterbanks==0.4.0; extra == "spk"
+Provides-Extra: egs3
+Requires-Dist: scikit-learn>=1.0.0; extra == "egs3"
+Provides-Extra: speechlm
+Requires-Dist: psutil; extra == "speechlm"
+Requires-Dist: transformers==5.0.0rc3; extra == "speechlm"
+Requires-Dist: huggingface-hub; extra == "speechlm"
+Requires-Dist: joblib; extra == "speechlm"
+Requires-Dist: polars; extra == "speechlm"
+Requires-Dist: duckdb; extra == "speechlm"
+Requires-Dist: torchtitan; sys_platform == "linux" and extra == "speechlm"
+Requires-Dist: liger-kernel; sys_platform == "linux" and extra == "speechlm"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8>=3.7.8; extra == "dev"
+Requires-Dist: pytest<8.4.0,>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.7.1; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest<8.4.0,>=7.0.0; extra == "test"
+Requires-Dist: pytest-timeouts>=1.2.1; extra == "test"
+Requires-Dist: pytest-pythonpath>=0.7.3; extra == "test"
+Requires-Dist: pytest-cov>=2.7.1; extra == "test"
+Requires-Dist: hacking>=2.0.0; extra == "test"
+Requires-Dist: mock>=2.0.0; extra == "test"
+Requires-Dist: pycodestyle; extra == "test"
+Requires-Dist: jsondiff>=2.0.0; extra == "test"
+Requires-Dist: flake8>=3.7.8; extra == "test"
+Requires-Dist: flake8-docstrings>=1.3.1; extra == "test"
+Requires-Dist: black; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: h5py>=2.10.0; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx<9.0.0; extra == "doc"
+Requires-Dist: sphinx-rtd-theme>=0.2.4; extra == "doc"
+Requires-Dist: myst-parser; extra == "doc"
+Requires-Dist: sphinx-argparse>=0.2.5; extra == "doc"
+Requires-Dist: sphinx-markdown-builder; extra == "doc"
+Requires-Dist: sphinx-markdown-tables; extra == "doc"
+Provides-Extra: all
+Requires-Dist: espnet3[asr]; extra == "all"
+Requires-Dist: espnet3[tts]; extra == "all"
+Requires-Dist: espnet3[enh]; extra == "all"
+Requires-Dist: espnet3[spk]; extra == "all"
+Requires-Dist: espnet3[speechlm]; extra == "all"
+Requires-Dist: espnet3[egs3]; extra == "all"
+Requires-Dist: fairscale; extra == "all"
+Requires-Dist: transformers; extra == "all"
+Requires-Dist: evaluate; extra == "all"
+
+espnet3
+
+独立的 espnet3 框架。本项目基于 [ESPnet](https://espnet.github.io/espnet/)，旨在提供一个更轻量、更现代化的语音处理库。
+
+## 简介
+
+本项目从官方 ESPnet 仓库中提取了 `espnet3` 模块，并进行了独立打包。它移除了对旧版本代码的依赖，专注于提供简洁、高效的语音识别（ASR）、语音合成（TTS）等任务的训练和推理流程。
+
+本项目内嵌了 espnet_model_zoo 的源代码以避免依赖冲突 。
+
+## 安装
+
+1.  克隆仓库：
+    ```bash
+    git clone https://github.com/jeffchen0325/espnet3.git
+    cd espnet3
+    ```
+
+2.  安装依赖：to be updated later
+
+
+## 🚀 快速开始
+
+以下是一个简单的示例，展示如何运行一个基础的 ASR 实验：
+
+```bash
+cd espnet3/egs3/mini_an4/asr
+python run.py \
+    --stages train \
+    --training_config conf/train.yaml
+```

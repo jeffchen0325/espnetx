@@ -7,7 +7,7 @@ from typing import Any, Callable, Dict, List, Optional, Union
 from hydra.utils import instantiate
 from omegaconf import DictConfig, OmegaConf
 
-from espnet2.train.preprocessor import AbsPreprocessor
+from espnet3.train.preprocessor import AbsPreprocessor
 from espnet3.components.data.dataset import (
     CombinedDataset,
     DatasetWithTransform,

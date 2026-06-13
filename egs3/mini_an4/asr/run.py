@@ -1,19 +1,11 @@
-from egs3.TEMPLATE.asr.run import (
-    DEFAULT_STAGES,
-    build_parser,
-    main,
-    parse_cli_and_stage_args,
-)
+import sys
+from pathlib import Path
+from TEMPLATE.asr.run import DEFAULT_STAGES, main
 from espnet3.systems.asr.system import ASRSystem
 
 if __name__ == "__main__":
-    parser = build_parser(
-        stages=DEFAULT_STAGES,
-    )
-    args, _ = parse_cli_and_stage_args(parser, stages=DEFAULT_STAGES)
-
     main(
-        args=args,
+        sys_args=sys.argv[1:],
         system_cls=ASRSystem,
         stages=DEFAULT_STAGES,
     )

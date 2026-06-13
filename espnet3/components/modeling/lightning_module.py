@@ -11,7 +11,7 @@ from humanfriendly import format_number, format_size
 from hydra.utils import instantiate
 from omegaconf import OmegaConf
 
-from espnet2.train.collate_fn import CommonCollateFn
+from espnet3.train.collate_fn import CommonCollateFn
 from espnet3.components.data.collect_stats import collect_stats
 from espnet3.components.data.dataloader import DataLoaderBuilder
 from espnet3.components.modeling.optimization_spec import (

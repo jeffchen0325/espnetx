@@ -320,6 +320,7 @@ def load_and_merge_config(
     """
     if config_path is None:
         return None
+    config_path = Path(config_path)
     if default_package is None:
         default_package = _infer_default_package_from_config_path(config_path)
     if default_package is None:
