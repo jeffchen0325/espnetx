@@ -1,5 +1,5 @@
 [project]
-name = "espnetX"
+name = "espnetx"
 dynamic = ["version", "readme"]
 authors = []
 description = "ESPnetX: end-to-end speech processing toolkit version X"
@@ -40,7 +40,7 @@ dependencies = [
     "tensorboard>=1.14",
     "einops",
     "lhotse",
-    # "espnet_model_zoo",
+    # "espnet_model_zoo", # vendor to inner package
     "matplotlib",
     "nltk>=3.4.5",
     "hydra-core",
@@ -186,12 +186,12 @@ doc = [
 ]
 
 all = [
-  "espnetX[asr]",
-  "espnetX[tts]",
-  "espnetX[enh]",
-  "espnetX[spk]",
-  "espnetX[speechlm]",
-  "espnetX[egs3]",
+  "espnetx[asr]",
+  "espnetx[tts]",
+  "espnetx[enh]",
+  "espnetx[spk]",
+  "espnetx[speechlm]",
+  "espnetx[egs3]",
   "fairscale",
   "transformers",
   "evaluate",
