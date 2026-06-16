@@ -38,8 +38,10 @@ DEFAULT_STAGES: List[str] = list(STAGE_CONFIGS.keys())
 
 @dataclass
 class DefaultConfigs:
-    stages: List[str] = field(default_factory=lambda: ["all"])
-    training_config: str = "conf/training.yaml"
+    #stages: List[str] = field(default_factory=lambda: ["all"])
+    stages: List[str] = field(default_factory=lambda: [
+        "create_dataset", "train_tokenizer", "collect_stats", "train", "infer", "measure"])
+    training_config: str = "conf/training_asr_transducer.yaml"
     inference_config: str = "conf/inference.yaml"
     metrics_config: str = "conf/metrics.yaml"
     publication_config: str = "conf/publication.yaml"
