@@ -22,7 +22,7 @@ from hydra.utils import instantiate
 from omegaconf import DictConfig, ListConfig, OmegaConf
 
 # import espnet3
-from espnet3.components.modeling.lightning_module import build_model_summary
+from espnet3.utils.build_model_summary import build_model_summary
 from espnet3.utils.logging_utils import get_git_metadata
 from espnet3.utils.task_utils import get_espnet_model
 
