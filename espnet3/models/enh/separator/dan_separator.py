@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as Fun
 from torch_complex.tensor import ComplexTensor
 
-from espnet3.utils.complex_utils import is_complex
+from espnet3.torch_utils.complex_utils import is_complex
 from espnet3.models.enh.separator.abs_separator import AbsSeparator
 from espnet3.legacy.nets.pytorch_backend.rnn.encoders import RNN
 

@@ -5,7 +5,7 @@ import torch
 from torch.nn import functional as F
 from torch_complex.tensor import ComplexTensor
 
-from espnet2.utils.complex_utils import is_complex
+from espnet2.torch_utils.complex_utils import is_complex
 from espnet2.legacy.nets.pytorch_backend.nets_utils import make_pad_mask
 from espnet2.legacy.nets.pytorch_backend.rnn.encoders import RNN, RNNP
 

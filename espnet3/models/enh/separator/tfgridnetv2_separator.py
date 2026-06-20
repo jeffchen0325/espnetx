@@ -10,7 +10,7 @@ from torch.nn.parameter import Parameter
 
 from espnet3.models.enh.decoder.stft_decoder import STFTDecoder
 from espnet3.models.enh.encoder.stft_encoder import STFTEncoder
-from espnet3.utils.complex_utils import new_complex_like
+from espnet3.torch_utils.complex_utils import new_complex_like
 from espnet3.models.enh.separator.abs_separator import AbsSeparator
 from espnet3.torch_utils.get_layer_from_string import get_layer
 

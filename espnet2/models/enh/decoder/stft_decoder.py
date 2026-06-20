@@ -3,7 +3,7 @@ import torch_complex
 from torch_complex.tensor import ComplexTensor
 
 from espnet2.models.enh.decoder.abs_decoder import AbsDecoder
-from espnet2.utils.complex_utils import is_torch_complex_tensor
+from espnet2.torch_utils.complex_utils import is_torch_complex_tensor
 from espnet2.layers.stft import Stft
 
 

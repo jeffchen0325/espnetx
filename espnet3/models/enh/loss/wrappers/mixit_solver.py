@@ -4,8 +4,8 @@ from typing import Dict, List, Union
 import torch
 from torch_complex.tensor import ComplexTensor
 
-from espnet3.utils.complex_utils import einsum as complex_einsum
-from espnet3.utils.complex_utils import stack as complex_stack
+from espnet3.torch_utils.complex_utils import einsum as complex_einsum
+from espnet3.torch_utils.complex_utils import stack as complex_stack
 from espnet3.models.enh.loss.criterions.abs_loss import AbsEnhLoss
 from espnet3.models.enh.loss.wrappers.abs_wrapper import AbsLossWrapper
 

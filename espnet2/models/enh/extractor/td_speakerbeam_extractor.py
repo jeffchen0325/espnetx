@@ -5,7 +5,7 @@ import torch
 from torch_complex.tensor import ComplexTensor
 
 from espnet2.models.enh.extractor.abs_extractor import AbsExtractor
-from espnet2.utils.complex_utils import is_complex
+from espnet2.torch_utils.complex_utils import is_complex
 from espnet2.models.enh.layers.tcn import TemporalConvNet, TemporalConvNetInformed
 from espnet2.legacy.nets.pytorch_backend.nets_utils import make_pad_mask
 

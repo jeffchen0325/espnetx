@@ -6,7 +6,7 @@ import torch
 from torch_complex import functional as FC
 from torch_complex.tensor import ComplexTensor
 
-from espnet2.utils.complex_utils import (
+from espnet2.torch_utils.complex_utils import (
     cat,
     complex_norm,
     einsum,

@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import torch_complex.functional as FC
 from torch_complex.tensor import ComplexTensor
 
-from espnet3.utils.complex_utils import einsum, matmul, reverse
+from espnet3.torch_utils.complex_utils import einsum, matmul, reverse
 
 """ WPE pytorch version: Ported from https://github.com/fgnt/nara_wpe
 Many functions aren't enough tested"""

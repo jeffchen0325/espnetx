@@ -8,7 +8,7 @@ import torch.nn.functional as F
 from torch.nn import init
 from torch.nn.parameter import Parameter
 
-from espnet3.utils.complex_utils import is_complex, new_complex_like
+from espnet3.torch_utils.complex_utils import is_complex, new_complex_like
 from espnet3.models.enh.separator.abs_separator import AbsSeparator
 from espnet3.torch_utils.get_layer_from_string import get_layer
 

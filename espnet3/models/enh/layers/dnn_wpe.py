@@ -3,7 +3,7 @@ from typing import Tuple, Union
 import torch
 from torch_complex.tensor import ComplexTensor
 
-from espnet3.utils.complex_utils import to_double, to_float
+from espnet3.torch_utils.complex_utils import to_double, to_float
 from espnet3.models.enh.layers.mask_estimator import MaskEstimator
 from espnet3.models.enh.layers.wpe import wpe_one_iteration
 from espnet3.legacy.nets.pytorch_backend.nets_utils import make_pad_mask

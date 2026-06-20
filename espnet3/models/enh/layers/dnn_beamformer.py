@@ -9,7 +9,7 @@ from torch_complex.tensor import ComplexTensor
 
 import espnet3.models.enh.layers.beamformer as bf_v1
 import espnet3.models.enh.layers.beamformer_th as bf_v2
-from espnet3.utils.complex_utils import stack, to_double, to_float
+from espnet3.torch_utils.complex_utils import stack, to_double, to_float
 from espnet3.models.enh.layers.mask_estimator import MaskEstimator
 
 BEAMFORMER_TYPES = (

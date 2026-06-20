@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import torch
 from torch_complex.tensor import ComplexTensor
 
-from espnet2.utils.complex_utils import is_complex, new_complex_like
+from espnet2.torch_utils.complex_utils import is_complex, new_complex_like
 from espnet2.models.enh.layers.uses import USES
 from espnet2.models.enh.separator.abs_separator import AbsSeparator
 

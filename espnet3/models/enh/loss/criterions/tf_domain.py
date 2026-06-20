@@ -5,7 +5,7 @@ from functools import reduce
 import torch
 import torch.nn.functional as F
 
-from espnet3.utils.complex_utils import complex_norm, is_complex, new_complex_like
+from espnet3.torch_utils.complex_utils import complex_norm, is_complex, new_complex_like
 from espnet3.models.enh.loss.criterions.abs_loss import AbsEnhLoss
 
 EPS = torch.finfo(torch.get_default_dtype()).eps

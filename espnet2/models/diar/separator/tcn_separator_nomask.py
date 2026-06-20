@@ -4,7 +4,7 @@ import torch
 from torch_complex.tensor import ComplexTensor
 
 from espnet2.models.diar.layers.tcn_nomask import TemporalConvNet
-from espnet2.utils.complex_utils import is_complex
+from espnet2.torch_utils.complex_utils import is_complex
 from espnet2.models.enh.separator.abs_separator import AbsSeparator
 
 

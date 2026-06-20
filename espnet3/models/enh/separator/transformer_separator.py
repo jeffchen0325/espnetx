@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import torch
 from torch_complex.tensor import ComplexTensor
 
-from espnet3.utils.complex_utils import is_complex
+from espnet3.torch_utils.complex_utils import is_complex
 from espnet3.models.enh.separator.abs_separator import AbsSeparator
 from espnet3.legacy.nets.pytorch_backend.nets_utils import make_non_pad_mask
 from espnet3.legacy.nets.pytorch_backend.transformer.embedding import (
